@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<xs:schema   
+  xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:include schemaLocation="HTML5.xsd"/>
+  
+  <xs:attributeGroup name="lv1-section-attrs">
+    <xs:attribute name="class" use="optional" default="section">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="home"/>
+          <xs:enumeration value="section"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+
+
+  <xs:attributeGroup name="lv1-article-attrs">
+    <xs:attribute name="class" use="optional" default="default">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="default"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  
+
+
+  <xs:attributeGroup name="lv2-article_section-attrs">
+    <xs:attribute name="class" use="optional" default="default">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <!--<xs:enumeration value="tab"/>
+          <xs:enumeration value="accordion"/>
+          <xs:enumeration value="article_carousel"/>
+          <xs:enumeration value="banner_carousel"/>
+          <xs:enumeration value="gallery"/>-->
+          <xs:enumeration value="default"/>
+       
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+
+
+  <xs:attributeGroup name="lv2-section_section-attrs" >
+    <xs:attribute name="class" use="optional" default="default">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="video"/>
+          <xs:enumeration value="ListTab"/>
+          <xs:enumeration value="product"/>
+          <xs:enumeration value="ListSilde"/>
+          <xs:enumeration value="img-gallry"/>
+          <xs:enumeration value="img_news"/>
+          <xs:enumeration value="img_article"/>
+          <xs:enumeration value="article"/>
+          <xs:enumeration value="default"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="lv2-section_article-attrs">
+    <xs:attribute name="class" use="optional" default="default">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          
+          <xs:enumeration value="default"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="lv3-section-attrs">
+    <xs:attribute name="class" use="optional" default="default">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="default"/>
+          <!--<xs:enumeration value="content_list"/>
+           <xs:enumeration value="imgs_big"/>-->
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+
+
+  <xs:attributeGroup name="lv3-article-attrs">
+    <xs:attribute name="class" use="optional" default="default">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="default"/>
+          <xs:enumeration value="article_list"/>
+         
+ 	  <xs:enumeration value="images_list"/>
+ 	  <xs:enumeration value="news_list"/>
+          <!--<xs:enumeration value="winchina_list"/>-->
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="col_attrs">
+    <xs:attribute name="class" use="required" fixed="col"/>
+    <xs:attribute name="data-toattr-class-xs" use="optional" default="col-xs-3">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="col-xs-1"/>
+          <xs:enumeration value="col-xs-2"/>
+          <xs:enumeration value="col-xs-3"/>
+          <xs:enumeration value="col-xs-4"/>
+          <xs:enumeration value="col-xs-5"/>
+          <xs:enumeration value="col-xs-6"/>
+          <xs:enumeration value="col-xs-7"/>
+          <xs:enumeration value="col-xs-8"/>
+          <xs:enumeration value="col-xs-9"/>
+          <xs:enumeration value="col-xs-10"/>
+          <xs:enumeration value="col-xs-11"/>
+          <xs:enumeration value="col-xs-12"/>
+          <xs:enumeration value="hidden-xs"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="data-toattr-class-sm" use="optional" default="col-sm-3">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="col-sm-1"/>
+          <xs:enumeration value="col-sm-2"/>
+          <xs:enumeration value="col-sm-3"/>
+          <xs:enumeration value="col-sm-4"/>
+          <xs:enumeration value="col-sm-5"/>
+          <xs:enumeration value="col-sm-6"/>
+          <xs:enumeration value="col-sm-7"/>
+          <xs:enumeration value="col-sm-8"/>
+          <xs:enumeration value="col-sm-9"/>
+          <xs:enumeration value="col-sm-10"/>
+          <xs:enumeration value="col-sm-11"/>
+          <xs:enumeration value="col-sm-12"/>
+          <xs:enumeration value="hidden-sm"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="data-toattr-class-md" use="optional" default="col-md-3">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="col-md-1"/>
+          <xs:enumeration value="col-md-2"/>
+          <xs:enumeration value="col-md-3"/>
+          <xs:enumeration value="col-md-4"/>
+          <xs:enumeration value="col-md-5"/>
+          <xs:enumeration value="col-md-6"/>
+          <xs:enumeration value="col-md-7"/>
+          <xs:enumeration value="col-md-8"/>
+          <xs:enumeration value="col-md-9"/>
+          <xs:enumeration value="col-md-10"/>
+          <xs:enumeration value="col-md-11"/>
+          <xs:enumeration value="col-md-12"/>
+          <xs:enumeration value="hidden-md"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="data-toattr-class-lg" use="optional" default="col-lg-3">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="col-lg-1"/>
+          <xs:enumeration value="col-lg-2"/>
+          <xs:enumeration value="col-lg-3"/>
+          <xs:enumeration value="col-lg-4"/>
+          <xs:enumeration value="col-lg-5"/>
+          <xs:enumeration value="col-lg-6"/>
+          <xs:enumeration value="col-lg-7"/>
+          <xs:enumeration value="col-lg-8"/>
+          <xs:enumeration value="col-lg-9"/>
+          <xs:enumeration value="col-lg-10"/>
+          <xs:enumeration value="col-lg-11"/>
+          <xs:enumeration value="col-lg-12"/>
+          <xs:enumeration value="hidden-lg"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="row_attrs">
+    <xs:attribute name="class" use="required" fixed="row"/>
+  </xs:attributeGroup>
+
+
+
+
+  <xs:attributeGroup name="img-attr">
+    <xs:attribute name="data-toattr-src" use="required" type="xs:string"/>
+    <xs:attribute name="data-img-crop" use="optional" default="none">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="none"/>
+          <xs:enumeration value="article_flow_image_300x200"/>
+          <xs:enumeration value="section_header_747x300"/>
+          <xs:enumeration value="article_header_703x280"/>
+          <xs:enumeration value="article_gallery_thumb_212x170"/>
+          <xs:enumeration value="article_list_image"/>
+          <xs:enumeration value="content_list_image"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+
+</xs:schema>

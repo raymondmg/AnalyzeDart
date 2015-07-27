@@ -1,0 +1,55 @@
+{
+    propertyEditors: [
+        {
+		alias: "DigiTiger.Awas",
+		name: "DIGITIGER_ Advanced Web Authoring Solution",
+		editor: {
+		view: "~/App_Plugins/DtAwas/dtawas.html",
+		valueType: "TEXT"
+		},
+		prevalues: {
+			fields: [
+				{
+					label: "Configuration File Name",
+					description: "Enter the name of the configuration file in folder /App_Plugin/DtAwas/XmlConfigs. for example: XPAGES_config.xml",
+					key: "config",
+					view: "textstring",
+					validation: [
+						{
+							type: "Required" 
+						}						
+					]
+				},
+				{
+					label: "Xsd Schema File Name",
+					description: "Enter the name of the xslt file in folder /App_Plugin/DtAwas/XmlConfigs. for example: mainContent.xsd",
+					key: "xsd",
+					view: "textstring",
+					validation: [
+						{
+							type: "Required" 
+						}						
+					]
+				},
+				{
+					label: "Root Element Index",
+					description: "Enter the index number for the root element",
+					key: "root",
+					view: "textstring",
+					
+				}	
+			]
+		}
+        },
+        
+        
+    ]
+    ,
+    javascript: [
+		'~/App_Plugins/DtAwas/dtawas.controller.js'
+    ],
+    css: [
+		'~/App_Plugins/DtAwas/dtawas.css'
+    ]
+    
+}

@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<CONFIG_JAXE>
+<LANGAGE>
+<FICHIER_SCHEMA nom="HTML5.xsd"/>
+<RACINE element="div"/>
+<RACINE element="article"/>
+<RACINE element="aside"/>
+<RACINE element="nav"/>
+<RACINE element="section"/>
+</LANGAGE>
+<ENREGISTREMENT>
+<ENCODAGE>utf-8</ENCODAGE>
+</ENREGISTREMENT>
+
+<AFFICHAGE_NOEUDS>
+<AFFICHAGE_ELEMENT element="a" type="string">
+<AFFICHAGE_ATTRIBUT attribut="target"/>
+</AFFICHAGE_ELEMENT>
+
+
+
+
+<AFFICHAGE_ELEMENT element="div" type="layout"/>
+<AFFICHAGE_ELEMENT element="section" type="section"/>
+  <AFFICHAGE_ELEMENT element="article" type="section"/>
+<AFFICHAGE_ELEMENT element="header" type="section"/>
+<AFFICHAGE_ELEMENT element="p" type="block"/>
+<AFFICHAGE_ELEMENT element="blockquote" type="block"/>
+<AFFICHAGE_ELEMENT element="figure" type="section"/>
+<AFFICHAGE_ELEMENT element="img" type="fichier"/>
+<AFFICHAGE_ELEMENT element="form" type="section"/>
+
+<AFFICHAGE_ELEMENT element="aside" type="block"/>
+<AFFICHAGE_ELEMENT element="b" type="string"/>
+
+
+<AFFICHAGE_ELEMENT element="br" type="vide"/>
+<AFFICHAGE_ELEMENT element="caption" type="string"/>
+<AFFICHAGE_ELEMENT element="col" type="string"/>
+<AFFICHAGE_ELEMENT element="colgroup" type="string"/>
+<AFFICHAGE_ELEMENT element="dd" type="string"/>
+<AFFICHAGE_ELEMENT element="del" type="string">
+<AFFICHAGE_ATTRIBUT attribut="cite"/>
+</AFFICHAGE_ELEMENT>
+<AFFICHAGE_ELEMENT element="dl" type="zone"/>
+
+<AFFICHAGE_ELEMENT element="dt" type="zone"/>
+<AFFICHAGE_ELEMENT element="figcaption" type="string"/>
+
+<AFFICHAGE_ELEMENT element="h1" type="block"/>
+<AFFICHAGE_ELEMENT element="h2" type="block"/>
+<AFFICHAGE_ELEMENT element="h3" type="block"/>
+<AFFICHAGE_ELEMENT element="h4" type="block"/>
+<AFFICHAGE_ELEMENT element="h5" type="block"/>
+<AFFICHAGE_ELEMENT element="h6" type="block"/>
+<AFFICHAGE_ELEMENT element="source" type="string"/>
+<AFFICHAGE_ELEMENT element="sub" type="string"/>
+<AFFICHAGE_ELEMENT element="summary" type="string"/>
+<AFFICHAGE_ELEMENT element="sup" type="string"/>
+<AFFICHAGE_ELEMENT element="table" type="table"/>
+<AFFICHAGE_ELEMENT element="tbody" type="string"/>
+<AFFICHAGE_ELEMENT element="td" type="string"/>
+<AFFICHAGE_ELEMENT element="tfoot" type="string"/>
+<AFFICHAGE_ELEMENT element="th" type="string"/>
+<AFFICHAGE_ELEMENT element="thead" type="string"/>
+<AFFICHAGE_ELEMENT element="tr" type="string"/>
+<AFFICHAGE_ELEMENT element="track" type="string"/>
+<AFFICHAGE_ELEMENT element="u" type="string"/>
+<AFFICHAGE_ELEMENT element="ul" type="liste"/>
+<AFFICHAGE_ELEMENT element="video" type="section"/>
+<AFFICHAGE_ELEMENT element="abbr" type="stringsd"/>
+<AFFICHAGE_ELEMENT element="acronym" type="string"/>
+<AFFICHAGE_ELEMENT element="address" type="string"/>
+<AFFICHAGE_ELEMENT element="area" type="string"/>
+  <AFFICHAGE_ELEMENT element="ol" type="liste"/>
+  <AFFICHAGE_ELEMENT element="li" type="item"/>
+<AFFICHAGE_ELEMENT element="bdo" type="string"/>
+<AFFICHAGE_ELEMENT element="big" type="string"/>
+<AFFICHAGE_ELEMENT element="button" type="string"/>
+<AFFICHAGE_ELEMENT element="cite" type="string"/>
+<AFFICHAGE_ELEMENT element="code" type="string"/>
+<AFFICHAGE_ELEMENT element="dfn" type="string"/>
+<AFFICHAGE_ELEMENT element="em" type="string"/>
+<AFFICHAGE_ELEMENT element="fieldset" type="string"/>
+
+<AFFICHAGE_ELEMENT element="input" type="string"/>
+<AFFICHAGE_ELEMENT element="kbd" type="string"/>
+<AFFICHAGE_ELEMENT element="label" type="string"/>
+<AFFICHAGE_ELEMENT element="legend" type="string"/>
+<AFFICHAGE_ELEMENT element="map" type="string"/>
+<AFFICHAGE_ELEMENT element="nav" type="string"/>
+<AFFICHAGE_ELEMENT element="object" type="string"/>
+<AFFICHAGE_ELEMENT element="pre" type="string"/>
+<AFFICHAGE_ELEMENT element="q" type="string"/>
+<AFFICHAGE_ELEMENT element="samp" type="string"/>
+<AFFICHAGE_ELEMENT element="select" type="string"/>
+<AFFICHAGE_ELEMENT element="small" type="string"/>
+<AFFICHAGE_ELEMENT element="span" type="string"/>
+<AFFICHAGE_ELEMENT element="strong" type="string"/>
+<AFFICHAGE_ELEMENT element="textarea" type="string"/>
+<AFFICHAGE_ELEMENT element="tt" type="string"/>
+<AFFICHAGE_ELEMENT element="var" type="string"/>
+</AFFICHAGE_NOEUDS>
+<EXPORTS/>
+<STRINGS langue="zh">
+<DESCRIPTION_CONFIG/>
+<STRINGS_MENU menu="内容模块"/>
+<STRINGS_MENU menu="页面板块">
+<STRINGS_MENU menu="section">
+<TITRE>内容版块(section)</TITRE>
+</STRINGS_MENU>
+<STRINGS_MENU menu="aside">
+<TITRE>侧栏板块(aside)</TITRE>
+</STRINGS_MENU>
+<STRINGS_MENU menu="figure">
+<TITRE>图表(figure)</TITRE>
+</STRINGS_MENU>
+</STRINGS_MENU>
+<STRINGS_MENU menu="添加元素">
+<STRINGS_MENU menu="p">
+<TITRE>段落(p)</TITRE>
+</STRINGS_MENU>
+<STRINGS_MENU menu="h1">
+<TITRE>一级标题(h1)</TITRE>
+</STRINGS_MENU>
+<STRINGS_MENU menu="h2">
+<TITRE>二级标题(h2)</TITRE>
+</STRINGS_MENU>
+<STRINGS_MENU menu="h3">
+<TITRE>三级标题(h3)</TITRE>
+</STRINGS_MENU>
+<STRINGS_MENU menu="h4">
+<TITRE>四级标题(h4)</TITRE>
+</STRINGS_MENU>
+<STRINGS_MENU menu="h5">
+<TITRE>五级标题(h5)</TITRE>
+</STRINGS_MENU>
+<STRINGS_MENU menu="h6">
+<TITRE>六级标题(h6)</TITRE>
+</STRINGS_MENU>
+<STRINGS_MENU menu="table">
+<TITRE>表格(table)</TITRE>
+</STRINGS_MENU>
+<STRINGS_MENU menu="ol">
+<TITRE>数字列表(ol)</TITRE>
+</STRINGS_MENU>
+<STRINGS_MENU menu="ul">
+<TITRE>无序号列表(ul)</TITRE>
+</STRINGS_MENU>
+  
+</STRINGS_MENU>
+<STRINGS_MENU menu="内容区域"/>
+<STRINGS_MENU menu="段落式样"/>
+<STRINGS_MENU menu="媒体内容"/>
+  <STRINGS_MENU menu="nav">
+    <TITRE>导航链接(nav)</TITRE>
+  </STRINGS_MENU>
+  <STRINGS_MENU menu="footer">
+    <TITRE>页脚文本(footer)</TITRE>
+  </STRINGS_MENU>
+  <STRINGS_ELEMENT element="p">
+    <TITRE>段落(p)</TITRE>
+    <STRINGS_ATTRIBUT attribut="class">
+      <TITRE>样式(class)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="style">
+      <TITRE>行内样式(style)</TITRE>
+    </STRINGS_ATTRIBUT>
+  </STRINGS_ELEMENT>
+  <STRINGS_ELEMENT element="table">
+    <TITRE>表格(table)</TITRE>
+    <STRINGS_ATTRIBUT attribut="class">
+      <TITRE>样式(class)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="style">
+      <TITRE>行内样式(style)</TITRE>
+    </STRINGS_ATTRIBUT>
+  </STRINGS_ELEMENT>
+  <STRINGS_ELEMENT element="ul">
+    <TITRE>无序号列表(ul)</TITRE>
+    <STRINGS_ATTRIBUT attribut="class">
+      <TITRE>样式(class)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="style">
+      <TITRE>行内样式(style)</TITRE>
+    </STRINGS_ATTRIBUT>
+  </STRINGS_ELEMENT>
+  <STRINGS_ELEMENT element="ol">
+    <TITRE>数字列表(ol)</TITRE>
+    <STRINGS_ATTRIBUT attribut="class">
+      <TITRE>样式(class)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="style">
+      <TITRE>行内样式(style)</TITRE>
+    </STRINGS_ATTRIBUT>
+  </STRINGS_ELEMENT>
+  <STRINGS_ELEMENT element="i">
+    <TITRE>斜体(i)</TITRE>
+    <STRINGS_ATTRIBUT attribut="class">
+      <TITRE>样式(class)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="style">
+      <TITRE>行内样式(style)</TITRE>
+    </STRINGS_ATTRIBUT>
+  </STRINGS_ELEMENT>
+  <STRINGS_ELEMENT element="span">
+    <TITRE>行内段落(span)</TITRE>
+    <STRINGS_ATTRIBUT attribut="class">
+      <TITRE>样式(class)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="style">
+      <TITRE>行内样式(style)</TITRE>
+    </STRINGS_ATTRIBUT>
+  </STRINGS_ELEMENT>
+  <STRINGS_ELEMENT element="u">
+    <TITRE>下划线(u)</TITRE>
+    <STRINGS_ATTRIBUT attribut="class">
+      <TITRE>样式(class)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="style">
+      <TITRE>行内样式(style)</TITRE>
+    </STRINGS_ATTRIBUT>
+  </STRINGS_ELEMENT>
+  <STRINGS_ELEMENT element="sub">
+    <TITRE>下标(sub)</TITRE>
+    <STRINGS_ATTRIBUT attribut="class">
+      <TITRE>样式(class)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="style">
+      <TITRE>行内样式(style)</TITRE>
+    </STRINGS_ATTRIBUT>
+  </STRINGS_ELEMENT>
+  <STRINGS_ELEMENT element="sup">
+    <TITRE>上标(sup)</TITRE>
+    <STRINGS_ATTRIBUT attribut="class">
+      <TITRE>样式(class)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="style">
+      <TITRE>行内样式(style)</TITRE>
+    </STRINGS_ATTRIBUT>
+  </STRINGS_ELEMENT>
+  <STRINGS_MENU menu="del">
+    <TITRE>删除文本(del)</TITRE>
+  </STRINGS_MENU>
+  <STRINGS_MENU menu="ins">
+    <TITRE>下划线文本(ins)</TITRE>
+  </STRINGS_MENU>
+ 
+  <STRINGS_ELEMENT element="summary">
+    <TITRE>元素标题(summary)</TITRE>
+    <STRINGS_ATTRIBUT attribut="class">
+      <TITRE>样式(class)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="style">
+      <TITRE>行内样式(style)</TITRE>
+    </STRINGS_ATTRIBUT>
+  </STRINGS_ELEMENT>
+  <STRINGS_ELEMENT element="details">
+    <TITRE>细节(details)</TITRE>
+    <STRINGS_ATTRIBUT attribut="class">
+      <TITRE>样式(class)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="style">
+      <TITRE>行内样式(style)</TITRE>
+    </STRINGS_ATTRIBUT>
+  </STRINGS_ELEMENT>
+  <STRINGS_ELEMENT element="article">
+    <TITRE>文章板块(article)</TITRE>
+    <STRINGS_ATTRIBUT attribut="class">
+      <TITRE>样式(class)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="style">
+      <TITRE>行内样式(style)</TITRE>
+    </STRINGS_ATTRIBUT>
+  </STRINGS_ELEMENT>
+  <STRINGS_ELEMENT element="hr">
+    <TITRE>水平线(hr)</TITRE>
+    <STRINGS_ATTRIBUT attribut="class">
+      <TITRE>样式(class)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="style">
+      <TITRE>行内样式(style)</TITRE>
+    </STRINGS_ATTRIBUT>
+  </STRINGS_ELEMENT>
+  <STRINGS_ELEMENT element="form">
+    <TITRE>表单(form)</TITRE>
+    <STRINGS_ATTRIBUT attribut="class">
+      <TITRE>样式(class)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="style">
+      <TITRE>行内样式(style)</TITRE>
+    </STRINGS_ATTRIBUT>
+  </STRINGS_ELEMENT>
+  <STRINGS_ELEMENT element="dl">
+    <TITRE>自定义列表(dl)</TITRE>
+    <STRINGS_ATTRIBUT attribut="class">
+      <TITRE>样式(class)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="style">
+      <TITRE>行内样式(style)</TITRE>
+    </STRINGS_ATTRIBUT>
+  </STRINGS_ELEMENT>
+  <STRINGS_ELEMENT element="fieldset">
+    <TITRE>表单区域(fieldset)</TITRE>
+    <STRINGS_ATTRIBUT attribut="class">
+      <TITRE>样式(class)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="style">
+      <TITRE>行内样式(style)</TITRE>
+    </STRINGS_ATTRIBUT>
+  </STRINGS_ELEMENT>
+  <STRINGS_ELEMENT element="address">
+    <TITRE>地址(address)</TITRE>
+    <STRINGS_ATTRIBUT attribut="class">
+      <TITRE>样式(class)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="style">
+      <TITRE>行内样式(style)</TITRE>
+    </STRINGS_ATTRIBUT>
+  </STRINGS_ELEMENT>
+  <STRINGS_ELEMENT element="header">
+    <TITRE>头部(header)</TITRE>
+    <STRINGS_ATTRIBUT attribut="class">
+      <TITRE>样式(class)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="style">
+      <TITRE>行内样式(style)</TITRE>
+    </STRINGS_ATTRIBUT> 
+  </STRINGS_ELEMENT>
+  <STRINGS_ELEMENT element="img">
+    <TITRE>图片(img)</TITRE>
+    <STRINGS_ATTRIBUT attribut="class">
+      <TITRE>样式(class)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="style">
+      <TITRE>行内样式(style)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="data-toattr-src">
+      <TITRE>图片编号(data-toattr-src)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="data-img-crop">
+      <TITRE>图片大小裁剪(data-img-crop)</TITRE>
+    </STRINGS_ATTRIBUT>
+  </STRINGS_ELEMENT>
+  <STRINGS_ELEMENT element="video">
+    <TITRE>视频(video)</TITRE>
+    <STRINGS_ATTRIBUT attribut="data-toattr-src">
+      <TITRE>视频编号(data-toattr-src)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="class">
+      <TITRE>样式(class)</TITRE>
+    </STRINGS_ATTRIBUT>
+    <STRINGS_ATTRIBUT attribut="style">
+      <TITRE>行内样式(style)</TITRE>
+    </STRINGS_ATTRIBUT>
+  </STRINGS_ELEMENT>
+<STRINGS_ELEMENT element="a">
+<TITRE>超链接(a)</TITRE>
+<STRINGS_ATTRIBUT attribut="href">
+<TITRE>网址(href)</TITRE>
+</STRINGS_ATTRIBUT>
+  <STRINGS_ATTRIBUT attribut="class">
+    <TITRE>样式(class)</TITRE>
+  </STRINGS_ATTRIBUT>
+  <STRINGS_ATTRIBUT attribut="style">
+    <TITRE>行内样式(style)</TITRE>
+  </STRINGS_ATTRIBUT>
+<STRINGS_ATTRIBUT attribut="target">
+<TITRE>链接打开方式(target)</TITRE>
+</STRINGS_ATTRIBUT>
+<STRINGS_ATTRIBUT attribut="rel"/>
+<STRINGS_ATTRIBUT attribut="type"/>
+</STRINGS_ELEMENT>
+<STRINGS_ELEMENT element="section">
+<STRINGS_ATTRIBUT attribut="data-type"/>
+  <STRINGS_ATTRIBUT attribut="class">
+    <TITRE>样式(class)</TITRE>
+  </STRINGS_ATTRIBUT>
+  
+</STRINGS_ELEMENT>
+<STRINGS_ELEMENT element="div">
+<TITRE>页面布局元素</TITRE>
+<STRINGS_ATTRIBUT attribut="class">
+<TITRE>类别</TITRE>
+<TITRE_VALEUR valeur="container">内容容器</TITRE_VALEUR>
+<TITRE_VALEUR valeur="row">行</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col">分栏</TITRE_VALEUR>
+</STRINGS_ATTRIBUT>
+<STRINGS_ATTRIBUT attribut="data-addclass-xs">
+<TITRE>手机显示</TITRE>
+<TITRE_VALEUR valeur="col-xs-1">1/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-xs-2">2/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-xs-3">3/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-xs-4">4/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-xs-5">5/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-xs-6">6/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-xs-7">7/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-xs-8">8/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-xs-9">9/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-xs-10">10/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-xs-11">11/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-xs-12">12/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="hidden-xs">隐藏</TITRE_VALEUR>
+</STRINGS_ATTRIBUT>
+<STRINGS_ATTRIBUT attribut="data-addclass-sm">
+<TITRE>平板显示</TITRE>
+<TITRE_VALEUR valeur="col-sm-1">1/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-sm-2">2/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-sm-3">3/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-sm-4">4/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-sm-5">5/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-sm-6">6/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-sm-7">7/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-sm-8">8/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-sm-9">9/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-sm-10">10/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-sm-11">11/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-sm-12">12/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="hidden-sm">隐藏</TITRE_VALEUR>
+</STRINGS_ATTRIBUT>
+<STRINGS_ATTRIBUT attribut="data-addclass-md">
+<TITRE>笔记本电脑显示</TITRE>
+<TITRE_VALEUR valeur="col-md-1">1/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-md-2">2/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-md-3">3/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-md-4">4/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-md-5">5/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-md-6">6/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-md-7">7/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-md-8">8/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-md-9">9/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-md-10">10/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-md-11">11/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-md-12">12/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="hidden-md">隐藏</TITRE_VALEUR>
+</STRINGS_ATTRIBUT>
+<STRINGS_ATTRIBUT attribut="data-addclass-lg">
+<TITRE>桌面显示器显示</TITRE>
+<TITRE_VALEUR valeur="col-lg-1">1/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-lg-2">2/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-lg-3">3/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-lg-4">4/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-lg-5">5/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-lg-6">6/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-lg-7">7/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-lg-8">8/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-lg-9">9/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-lg-10">10/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-lg-11">11/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="col-lg-12">12/12 栏宽</TITRE_VALEUR>
+<TITRE_VALEUR valeur="hidden-lg">隐藏</TITRE_VALEUR>
+</STRINGS_ATTRIBUT>
+</STRINGS_ELEMENT>
+<STRINGS_ELEMENT element="aside">
+<STRINGS_ATTRIBUT attribut="data-type"/>
+</STRINGS_ELEMENT>
+<STRINGS_ELEMENT element="b">
+  <TITRE>加粗(b)</TITRE>
+<STRINGS_ATTRIBUT attribut="id"/>
+<STRINGS_ATTRIBUT attribut="class"/>
+<STRINGS_ATTRIBUT attribut="style"/>
+<STRINGS_ATTRIBUT attribut="title"/>
+</STRINGS_ELEMENT>
+<STRINGS_ELEMENT element="blockquote">
+  <TITRE>引言(blockquote)</TITRE>
+<STRINGS_ATTRIBUT attribut="id"/>
+<STRINGS_ATTRIBUT attribut="class"/>
+<STRINGS_ATTRIBUT attribut="style"/>
+<STRINGS_ATTRIBUT attribut="title"/>
+<STRINGS_ATTRIBUT attribut="cite"/>
+</STRINGS_ELEMENT>
+<STRINGS_ELEMENT element="br">
+  <TITRE>换行(br)</TITRE>
+<STRINGS_ATTRIBUT attribut="id"/>
+<STRINGS_ATTRIBUT attribut="class"/>
+<STRINGS_ATTRIBUT attribut="style"/>
+<STRINGS_ATTRIBUT attribut="title"/>
+</STRINGS_ELEMENT>
+<STRINGS_ELEMENT element="caption">
+  <TITRE> 表格标题(caption)</TITRE>
+  <STRINGS_ATTRIBUT attribut="id"/>
+<STRINGS_ATTRIBUT attribut="class"/>
+<STRINGS_ATTRIBUT attribut="style"/>
+<STRINGS_ATTRIBUT attribut="title"/>
+</STRINGS_ELEMENT>
+<STRINGS_ELEMENT element="col"/>
+<STRINGS_ELEMENT element="colgroup"/>
+<STRINGS_ELEMENT element="dd">
+<STRINGS_ATTRIBUT attribut="id"/>
+<STRINGS_ATTRIBUT attribut="class"/>
+<STRINGS_ATTRIBUT attribut="style"/>
+<STRINGS_ATTRIBUT attribut="title"/>
+</STRINGS_ELEMENT>
+<STRINGS_ELEMENT element="del"/>
+<STRINGS_ELEMENT element="dl"/>
+<STRINGS_ELEMENT element="dt"/>
+<STRINGS_ELEMENT element="figcaption"/>
+<STRINGS_ELEMENT element="figure"/>
+<STRINGS_ELEMENT element="h1">
+<STRINGS_ATTRIBUT attribut="id"/>
+  <STRINGS_ATTRIBUT attribut="class">
+    <TITRE>样式(class)</TITRE>
+  </STRINGS_ATTRIBUT>
+  <STRINGS_ATTRIBUT attribut="style">
+    <TITRE>行内样式(style)</TITRE>
+  </STRINGS_ATTRIBUT>
+<STRINGS_ATTRIBUT attribut="title"/>
+</STRINGS_ELEMENT>
+<STRINGS_ELEMENT element="h2"/>
+<STRINGS_ELEMENT element="h3">
+<STRINGS_ATTRIBUT attribut="id"/>
+  <STRINGS_ATTRIBUT attribut="class">
+    <TITRE>样式(class)</TITRE>
+  </STRINGS_ATTRIBUT>
+  <STRINGS_ATTRIBUT attribut="style">
+    <TITRE>行内样式(style)</TITRE>
+  </STRINGS_ATTRIBUT>
+<STRINGS_ATTRIBUT attribut="title"/>
+</STRINGS_ELEMENT>
+<STRINGS_ELEMENT element="h4"/>
+<STRINGS_ELEMENT element="h5"/>
+<STRINGS_ELEMENT element="h6"/>
+<STRINGS_ELEMENT element="header"/>
+<STRINGS_ELEMENT element="hr"/>
+<STRINGS_ELEMENT element="i"/>
+<STRINGS_ELEMENT element="img"/>
+<STRINGS_ELEMENT element="ins"/>
+<STRINGS_ELEMENT element="li"/>
+<STRINGS_ELEMENT element="mark"/>
+<STRINGS_ELEMENT element="ol"/>
+<STRINGS_ELEMENT element="optgroup"/>
+<STRINGS_ELEMENT element="option"/>
+<STRINGS_ELEMENT element="p"/>
+<STRINGS_ELEMENT element="param"/>
+<STRINGS_ELEMENT element="source"/>
+<STRINGS_ELEMENT element="sub"/>
+<STRINGS_ELEMENT element="summary"/>
+<STRINGS_ELEMENT element="sup"/>
+<STRINGS_ELEMENT element="table"/>
+<STRINGS_ELEMENT element="tbody"/>
+<STRINGS_ELEMENT element="td"/>
+<STRINGS_ELEMENT element="tfoot"/>
+<STRINGS_ELEMENT element="th"/>
+<STRINGS_ELEMENT element="thead"/>
+<STRINGS_ELEMENT element="tr"/>
+<STRINGS_ELEMENT element="track"/>
+<STRINGS_ELEMENT element="u"/>
+<STRINGS_ELEMENT element="ul"/>
+<STRINGS_ELEMENT element="video"/>
+<STRINGS_ELEMENT element="abbr"/>
+<STRINGS_ELEMENT element="acronym"/>
+<STRINGS_ELEMENT element="address"/>
+<STRINGS_ELEMENT element="area"/>
+<STRINGS_ELEMENT element="article"/>
+<STRINGS_ELEMENT element="bdo">
+<STRINGS_ATTRIBUT attribut="id"/>
+  <STRINGS_ATTRIBUT attribut="class">
+    <TITRE>样式(class)</TITRE>
+  </STRINGS_ATTRIBUT>
+  <STRINGS_ATTRIBUT attribut="style">
+    <TITRE>行内样式(style)</TITRE>
+  </STRINGS_ATTRIBUT>
+<STRINGS_ATTRIBUT attribut="title"/>
+<STRINGS_ATTRIBUT attribut="onclick"/>
+<STRINGS_ATTRIBUT attribut="ondblclick"/>
+<STRINGS_ATTRIBUT attribut="onmousedown"/>
+<STRINGS_ATTRIBUT attribut="onmouseup"/>
+<STRINGS_ATTRIBUT attribut="onmouseover"/>
+<STRINGS_ATTRIBUT attribut="onmousemove"/>
+<STRINGS_ATTRIBUT attribut="onmouseout"/>
+<STRINGS_ATTRIBUT attribut="onkeypress"/>
+<STRINGS_ATTRIBUT attribut="onkeydown"/>
+<STRINGS_ATTRIBUT attribut="onkeyup"/>
+<STRINGS_ATTRIBUT attribut="lang"/>
+<STRINGS_ATTRIBUT attribut="dir"/>
+</STRINGS_ELEMENT>
+<STRINGS_ELEMENT element="big"/>
+<STRINGS_ELEMENT element="button"/>
+<STRINGS_ELEMENT element="cite">
+<STRINGS_ATTRIBUT attribut="id"/>
+  <STRINGS_ATTRIBUT attribut="class">
+    <TITRE>样式(class)</TITRE>
+  </STRINGS_ATTRIBUT>
+  <STRINGS_ATTRIBUT attribut="style">
+    <TITRE>行内样式(style)</TITRE>
+  </STRINGS_ATTRIBUT>
+<STRINGS_ATTRIBUT attribut="title"/>
+</STRINGS_ELEMENT>
+<STRINGS_ELEMENT element="code"/>
+<STRINGS_ELEMENT element="dfn">
+<STRINGS_ATTRIBUT attribut="id"/>
+  <STRINGS_ATTRIBUT attribut="class">
+    <TITRE>样式(class)</TITRE>
+  </STRINGS_ATTRIBUT>
+  <STRINGS_ATTRIBUT attribut="style">
+    <TITRE>行内样式(style)</TITRE>
+  </STRINGS_ATTRIBUT>
+<STRINGS_ATTRIBUT attribut="title"/>
+</STRINGS_ELEMENT>
+<STRINGS_ELEMENT element="em"/>
+<STRINGS_ELEMENT element="fieldset"/>
+<STRINGS_ELEMENT element="form"/>
+<STRINGS_ELEMENT element="input"/>
+<STRINGS_ELEMENT element="kbd"/>
+<STRINGS_ELEMENT element="label"/>
+<STRINGS_ELEMENT element="legend"/>
+<STRINGS_ELEMENT element="map"/>
+<STRINGS_ELEMENT element="nav"/>
+<STRINGS_ELEMENT element="object"/>
+<STRINGS_ELEMENT element="pre"/>
+<STRINGS_ELEMENT element="q"/>
+<STRINGS_ELEMENT element="samp">
+<STRINGS_ATTRIBUT attribut="id"/>
+  <STRINGS_ATTRIBUT attribut="class">
+    <TITRE>样式(class)</TITRE>
+  </STRINGS_ATTRIBUT>
+  <STRINGS_ATTRIBUT attribut="style">
+    <TITRE>行内样式(style)</TITRE>
+  </STRINGS_ATTRIBUT>
+<STRINGS_ATTRIBUT attribut="title"/>
+</STRINGS_ELEMENT>
+<STRINGS_ELEMENT element="select"/>
+<STRINGS_ELEMENT element="small">
+<STRINGS_ATTRIBUT attribut="id"/>
+  <STRINGS_ATTRIBUT attribut="class">
+    <TITRE>样式(class)</TITRE>
+  </STRINGS_ATTRIBUT>
+  <STRINGS_ATTRIBUT attribut="style">
+    <TITRE>行内样式(style)</TITRE>
+  </STRINGS_ATTRIBUT>
+<STRINGS_ATTRIBUT attribut="title"/>
+</STRINGS_ELEMENT>
+<STRINGS_ELEMENT element="span">
+<STRINGS_ATTRIBUT attribut="id"/>
+  <STRINGS_ATTRIBUT attribut="class">
+    <TITRE>样式(class)</TITRE>
+  </STRINGS_ATTRIBUT>
+  <STRINGS_ATTRIBUT attribut="style">
+    <TITRE>行内样式(style)</TITRE>
+  </STRINGS_ATTRIBUT>
+<STRINGS_ATTRIBUT attribut="title"/>
+</STRINGS_ELEMENT>
+<STRINGS_ELEMENT element="strong">
+<STRINGS_ATTRIBUT attribut="id"/>
+  <STRINGS_ATTRIBUT attribut="class">
+    <TITRE>样式(class)</TITRE>
+  </STRINGS_ATTRIBUT>
+  <STRINGS_ATTRIBUT attribut="style">
+    <TITRE>行内样式(style)</TITRE>
+  </STRINGS_ATTRIBUT>
+<STRINGS_ATTRIBUT attribut="title"/>
+</STRINGS_ELEMENT>
+<STRINGS_ELEMENT element="textarea">
+<STRINGS_ATTRIBUT attribut="id"/>
+  <STRINGS_ATTRIBUT attribut="class">
+    <TITRE>样式(class)</TITRE>
+  </STRINGS_ATTRIBUT>
+  <STRINGS_ATTRIBUT attribut="style">
+    <TITRE>行内样式(style)</TITRE>
+  </STRINGS_ATTRIBUT>
+<STRINGS_ATTRIBUT attribut="title"/>
+<STRINGS_ATTRIBUT attribut="accesskey"/>
+<STRINGS_ATTRIBUT attribut="tabindex"/>
+<STRINGS_ATTRIBUT attribut="onfocus"/>
+<STRINGS_ATTRIBUT attribut="onblur"/>
+<STRINGS_ATTRIBUT attribut="name"/>
+<STRINGS_ATTRIBUT attribut="rows"/>
+<STRINGS_ATTRIBUT attribut="cols"/>
+<STRINGS_ATTRIBUT attribut="disabled"/>
+<STRINGS_ATTRIBUT attribut="readonly"/>
+<STRINGS_ATTRIBUT attribut="onselect"/>
+<STRINGS_ATTRIBUT attribut="onchange"/>
+</STRINGS_ELEMENT>
+<STRINGS_ELEMENT element="tt">
+<STRINGS_ATTRIBUT attribut="id"/>
+  <STRINGS_ATTRIBUT attribut="class">
+    <TITRE>样式(class)</TITRE>
+  </STRINGS_ATTRIBUT>
+  <STRINGS_ATTRIBUT attribut="style">
+    <TITRE>行内样式(style)</TITRE>
+  </STRINGS_ATTRIBUT>
+<STRINGS_ATTRIBUT attribut="title"/>
+</STRINGS_ELEMENT>
+<STRINGS_ELEMENT element="var">
+<STRINGS_ATTRIBUT attribut="id"/>
+  <STRINGS_ATTRIBUT attribut="class">
+    <TITRE>样式(class)</TITRE>
+  </STRINGS_ATTRIBUT>
+  <STRINGS_ATTRIBUT attribut="style">
+    <TITRE>行内样式(style)</TITRE>
+  </STRINGS_ATTRIBUT>
+<STRINGS_ATTRIBUT attribut="title"/>
+</STRINGS_ELEMENT>
+</STRINGS>
+</CONFIG_JAXE>

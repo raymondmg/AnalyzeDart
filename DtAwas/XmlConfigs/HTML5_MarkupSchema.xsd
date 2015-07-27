@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<xs:schema 
+  xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+
+
+  elementFormDefault="qualified" 
+  attributeFormDefault="unqualified">
+
+
+
+<!-- Level 0 -->
+  
+  <!--  elements -->
+    <xs:element name="themes">
+      <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="theme" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+
+    <xs:element name="theme">
+      <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="reference" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="markup" minOccurs="1" maxOccurs="unbounded" />
+          </xs:sequence>
+          <xs:attribute name="name" use="required" type="xs:token"/>
+          <xs:attribute name="based_on" use="optional" type="xs:token"/>
+      </xs:complexType>
+    </xs:element>
+
+    <xs:element name="reference">
+      <xs:complexType>
+          <xs:sequence>
+            <xs:element name="identifier" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+          </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+
+    <xs:element name="identifiers">
+      <xs:complexType>
+          <xs:sequence>
+            <xs:element name="identifier" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+          </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="markup">
+      <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="identifiers" minOccurs="1" maxOccurs="1" />
+            <xs:element ref="html" minOccurs="1" maxOccurs="1" />
+          </xs:sequence>
+          <xs:attribute name="end-iteration" type="xs:boolean" default="false" />
+      </xs:complexType>
+    </xs:element>
+
+
+
+
+    <xs:element name="html">
+      <xs:complexType mixed="true">
+        <xs:sequence>
+          <xs:group ref="markupFields" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+      </xs:element>
+
+
+
+    <xs:group name="markupFields">
+      <xs:choice>
+        <xs:group ref="markupSimpleFields"  maxOccurs="unbounded"/>
+        <xs:group ref="markupContainerFields"  maxOccurs="unbounded"/>
+        <xs:element ref="childrenPlaceHolder" maxOccurs="1"/>
+      </xs:choice>
+    </xs:group>
+
+    
+    <xs:group name="markupFnFields">
+      <xs:choice>
+        <xs:group ref="markupSimpleFields"  maxOccurs="unbounded"/>
+        <xs:group ref="markupContainerFields"  maxOccurs="unbounded"/>
+      </xs:choice>
+    </xs:group>
+  
+    <xs:element name="childrenPlaceHolder">
+    </xs:element>
+
+    <xs:group name="markupSimpleFields">
+      <xs:choice>
+        <xs:element ref="ValueFromXPath"/>
+        <xs:element ref="ValuefromNodePostition"/>
+        <xs:element ref="GetImage"/>
+        <xs:element ref="GetFile"/>
+        <xs:element ref="GetUmbPageField"/>
+      </xs:choice>
+    </xs:group>
+
+    <xs:group name="markupContainerFields">
+      <xs:choice>
+        <xs:element ref="RepeatInnerContent"/>
+        <xs:element ref="FallBackValues"/>
+        <xs:element ref="If" />
+      </xs:choice>
+    </xs:group>
+
+    <xs:element name="ValueFromXPath">
+      <xs:complexType>
+        <xs:attribute name="xpath_expression" use="required" type="xs:token"/>
+        <xs:attribute name="second_xpath_expression_to_evaluate" use="optional" type="xs:string"/>
+        <xs:attribute name="string_to_evaluate" use="optional" type="xs:string"/>
+        <xs:attribute name="string_to_output" use="optional" type="xs:string"/>
+      </xs:complexType>
+    </xs:element>
+
+    <xs:element name="ValuefromNodePostition">
+      <xs:complexType>
+        <xs:attribute name="string_if_first" use="required" type="xs:string"/>
+        <xs:attribute name="string_if_last" use="required" type="xs:string"/>
+        <xs:attribute name="string_before_number" use="optional" type="xs:string"/>
+        <xs:attribute name="string_after_number" use="optional" type="xs:string"/>
+      </xs:complexType>
+    </xs:element>
+
+    <xs:element name="GetImage">
+      <xs:complexType>
+        <xs:attribute name="return_data" use="optional" default="url" >
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="url"/>
+                <xs:enumeration value="width"/>
+                <xs:enumeration value="height"/>
+              </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        
+        <xs:attribute name="xpath_for_image_id" use="optional" type="xs:string"/>
+        <xs:attribute name="image_prop_name" use="optional" type="xs:string"/>
+        <xs:attribute name="image_crop_name" use="optional" type="xs:string"/>
+        <xs:attribute name="xpath_for_image_crop_name" use="optional" type="xs:string"/>
+        <xs:attribute name="resize_to_width" use="optional" type="xs:string"/>
+        <xs:attribute name="resize_to_height" use="optional" type="xs:string"/>
+        <xs:attribute name="image_quality" use="optional" type="xs:string"/>
+      </xs:complexType>
+    </xs:element>
+
+    <xs:element name="GetFile">
+      <xs:complexType>
+        <xs:attribute name="xpath_for_file_id" use="required" type="xs:string"/>
+        <xs:attribute name="return_data" use="optional" default="url">
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="url"/>
+              <xs:enumeration value="extension"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="string_to_evaluate" use="optional" type="xs:string"/>
+        <xs:attribute name="string_to_output" use="optional" type="xs:string"/>
+      </xs:complexType>
+    </xs:element>
+
+    <xs:element name="GetUmbPageField">
+      <xs:complexType>
+        <xs:attribute name="field_name" use="required" type="xs:token"/>
+        <xs:attribute name="xpath_for_page_id" use="optional" type="xs:token"/>
+        <xs:attribute name="string_to_evaluate" use="optional" type="xs:string"/>
+        <xs:attribute name="string_to_output" use="optional" type="xs:string"/>
+      </xs:complexType>
+    </xs:element>
+
+    <xs:element name="RepeatInnerContent" >
+      <xs:complexType mixed="true">
+        <xs:sequence>
+          <xs:group ref="markupFnFields" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="repeat_type" use="optional" default="xmlNode">
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="xmlNode"/>
+              <xs:enumeration value="umbracoDoc"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="xpath" use="required" type="xs:token"/>
+        <xs:attribute name="include_dtAsset" use="optional" default="no">
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="yes"/>
+              <xs:enumeration value="no"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:complexType>
+    </xs:element>
+
+    <xs:element name="FallBackValues">
+      <xs:complexType>
+        <xs:choice>
+          <xs:group ref="markupSimpleFields" maxOccurs="unbounded"/>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+
+    <xs:element name="If" >
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element name ="ValueIfTrue">
+             <xs:complexType mixed="true">
+                 <xs:group ref="markupFnFields" minOccurs="0" maxOccurs="unbounded"/>
+             </xs:complexType>
+          </xs:element>
+          <xs:element name ="ValueIfFalse">
+             <xs:complexType mixed="true">
+                 <xs:group ref="markupFnFields" minOccurs="0" maxOccurs="unbounded"/>
+             </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+        <xs:attribute name="xpath_condition" type="xs:string"/>
+      </xs:complexType>
+    </xs:element>
+
+</xs:schema>
+   
+

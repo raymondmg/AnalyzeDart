@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<CONFIG_JAXE>
+<LANGAGE>
+<FICHIER_SCHEMA nom="HTML5_MarkupSchema.xsd"/>
+<RACINE element="themes"/>
+</LANGAGE>
+<ENREGISTREMENT>
+<ENCODAGE>utf-8</ENCODAGE>
+</ENREGISTREMENT>
+<MENUS>
+
+<MENU nom="Insert">
+<MENU_INSERTION nom="cdata" type_noeud="cdata"/>
+</MENU>
+
+</MENUS>
+<AFFICHAGE_NOEUDS>
+<AFFICHAGE_ELEMENT element="themes" type="layout"/>
+<AFFICHAGE_ELEMENT element="theme" type="layout">
+	<PARAMETRE nom="attributsVisibles" valeur="true"/>
+</AFFICHAGE_ELEMENT>
+<AFFICHAGE_ELEMENT element="markup" type="section"/>
+<AFFICHAGE_ELEMENT element="reference" type="section"/>
+<AFFICHAGE_ELEMENT element="identifiers" type="section"/>
+<AFFICHAGE_ELEMENT element="identifier" type="block"/>
+<AFFICHAGE_ELEMENT element="html" type="block"/>
+
+<AFFICHAGE_ELEMENT element="childrenPlaceHolder" type="vide"/>
+
+<AFFICHAGE_ELEMENT element="ValueFromXPath" type="vide"/>
+<AFFICHAGE_ELEMENT element="ValuefromNodePostition" type="vide"/>
+<AFFICHAGE_ELEMENT element="GetImage" type="vide"/>
+<AFFICHAGE_ELEMENT element="GetFile" type="vide"/>
+<AFFICHAGE_ELEMENT element="GetUmbPageField" type="vide"/>
+<AFFICHAGE_ELEMENT element="RepeatInnerContent" type="zone"/>
+<AFFICHAGE_ELEMENT element="FallBackValues" type="string"/>
+
+
+</AFFICHAGE_NOEUDS>
+<EXPORTS/>
+<STRINGS langue="zh">
+<DESCRIPTION_CONFIG/>
+
+
+
+</STRINGS>
+</CONFIG_JAXE>
